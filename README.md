@@ -11,7 +11,7 @@
   <h3 style="margin: 0 0 8px; font-size: 18px; color: #333;">চিত্ত চিরে চৈত্রমাস</h3>
   
   <!-- 520 -->
-  <p style="margin: 0 0 12px; color: #2e7d32; font-weight: bold; font-size: 16px;">মূল্য: ৳ [দাম লিখুন]</p>
+  <p style="margin: 0 0 12px; color: #2e7d32; font-weight: bold; font-size: 16px;">মূল্য: ৳ [520]</p>
   
   <!-- হোয়াটসঅ্যাপ অর্ডার বাটন -->
   <a href="https://wa.me/8801752808793?text=আমি%20চিত্ত%20চিরে%20চৈত্রমাস%20বইটি%20অর্ডার%20করতে%20চাই" target="_blank" style="background-color:#25D366; color:white; padding:10px 15px; text-decoration:none; border-radius:5px; display:block; font-size: 14px; font-weight: bold;">
