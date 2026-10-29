@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="গল্পবীজ (GolpoBij) — বাংলা উপন্যাস ও গল্পের বইয়ের অনলাইন দোকান।">
+<title>গল্পবীজ | GolpoBij — বাংলা উপন্যাস ও গল্পের বই</title>
+<style>
+:root{--green:#104b37;--green2:#1b674b;--gold:#e9b949;--cream:#fbf7ed;--paper:#fffdf7;--ink:#24332b;--muted:#65736a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Bengali","Nirmala UI",sans-serif;line-height:1.6}
+a{color:inherit}
+.wrap{width:min(1100px,92%);margin:auto}
+header{background:var(--green);color:white;padding:15px 0;border-bottom:4px solid var(--gold)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.35rem}
+.logo{width:45px;height:45px;border-radius:50%;background:var(--gold);display:grid;place-items:center;color:var(--green);font-size:1.5rem}
+nav a{text-decoration:none;margin-left:16px;font-size:.95rem}
+.hero{padding:52px 0 42px;background:linear-gradient(120deg,#f5ecd5,#fffdf7)}
+.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:28px;align-items:center}
+.eyebrow{color:var(--green2);font-weight:700}
+h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.2;margin:10px 0 14px;color:var(--green)}
+.hero p{font-size:1.08rem;color:#526258;max-width:610px}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.btn{display:inline-block;border:0;border-radius:999px;padding:11px 18px;text-decoration:none;font-weight:750;cursor:pointer}
+.primary{background:var(--green);color:white}
+.secondary{border:1px solid var(--green);color:var(--green);background:transparent}
+.book-art{background:var(--green);color:white;border-radius:22px;padding:28px;text-align:center;box-shadow:0 14px 35px #104b3722;transform:rotate(1deg)}
+.book-art .sun{font-size:3rem;color:var(--gold)}
+.book-art h2{font-size:2rem;margin:4px 0}
+.book-art p{color:#e8eee9;margin:0}
+section{padding:38px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap;margin-bottom:20px}
+h2{color:var(--green);margin:0;font-size:1.7rem}
+.muted{color:var(--muted);margin:4px 0 0}
+.notice{background:#f2e7c9;border-left:4px solid var(--gold);padding:12px 15px;border-radius:8px;margin:20px 0;color:#574a2b}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--paper);border:1px solid #e8e1d2;border-radius:16px;overflow:hidden;box-shadow:0 5px 16px #24332b0a}
+.cover{height:185px;display:grid;place-items:center;text-align:center;padding:20px;background:linear-gradient(145deg,#174d39,#267452);color:white;position:relative}
+.cover:before{content:"";position:absolute;inset:10px;border:1px solid #e9b949aa;border-radius:7px}
+.cover.gold{background:linear-gradient(145deg,#c18b2e,#f0ce76);color:#3e3219}
+.cover.berry{background:linear-gradient(145deg,#642f45,#a85a69)}
+.cover.blue{background:linear-gradient(145deg,#24495a,#467e87)}
+.cover span{position:relative;font-size:1.45rem;font-weight:800;max-width:230px}
+.card-body{padding:15px}
+.card h3{margin:0;color:var(--green);font-size:1.15rem}
+.author{color:var(--muted);font-size:.92rem;margin:3px 0 10px}
+.price-row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.price{font-weight:800;font-size:1.15rem}
+.order{background:var(--green2);color:white;text-decoration:none;border-radius:9px;padding:8px 12px;font-weight:700;font-size:.9rem}
+.small{font-size:.85rem;color:var(--muted)}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.step{padding:18px;background:#fffdf7;border:1px solid #e8e1d2;border-radius:14px}
+.step b{color:var(--green);display:block;margin-bottom:5px}
+footer{background:var(--green);color:#f7f4e9;padding:28px 0;margin-top:25px}
+footer .foot{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
+footer p{margin:4px 0;color:#dce8df}
+@media(max-width:720px){.hero-grid{grid-template-columns:1fr}.book-art{max-width:380px}.grid{grid-template-columns:repeat(2,1fr)}.how{grid-template-columns:1fr}nav a{margin-left:8px}}
+@media(max-width:460px){.grid{grid-template-columns:1fr}.cover{height:165px}.hero{padding:36px 0}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><div class="logo">📖</div><span>গল্পবীজ <small style="display:block;font-size:.68rem;font-weight:500;opacity:.85">GolpoBij</small></span></div>
+    <nav><a href="#books">বইয়ের কালেকশন</a><a href="#order">অর্ডার নিয়ম</a><a href="#contact">যোগাযোগ</a></nav>
+  </div>
+</header>
+<!-- দোকান চালু করার আগে: নমুনা বই/দাম এবং WhatsApp নম্বরটি নিজের তথ্য দিয়ে বদলান। -->
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">বাংলা উপন্যাস ও গল্পের বই</div>
+        <h1>প্রতিটি পাতায়<br>নতুন গল্পের বীজ</h1>
+        <p>প্রিয় লেখকের উপন্যাস, ছোটগল্প আর পড়ার আনন্দ—সব এক জায়গায়। আপনার পছন্দের বই বেছে নিয়ে WhatsApp-এ অর্ডার করুন।</p>
+        <div class="actions">
+          <a class="btn primary" href="#books">বই দেখুন</a>
+          <a class="btn secondary" href="#order">কীভাবে অর্ডার করবেন?</a>
+        </div>
+      </div>
+      <div class="book-art">
+        <div class="sun">☀</div>
+        <h2>গল্পবীজ</h2>
+        <p>বই পড়ুন • মনকে সমৃদ্ধ করুন</p>
+        <div style="font-size:3.2rem;margin-top:14px">📚</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="books">
+    <div class="wrap">
+      <div class="section-head">
+        <div><h2>বইয়ের কালেকশন</h2><p class="muted">আপনার পরের প্রিয় বইটি খুঁজে নিন</p></div>
+      </div>
+      <div class="notice"><b>দোকানদারের জন্য:</b> নিচের বইয়ের নাম ও দাম নমুনা হিসেবে দেওয়া। প্রকাশের আগে আপনার কাছে থাকা/সরবরাহকারী নিশ্চিত করা আসল বইয়ের নাম, লেখক ও সঠিক দাম বসিয়ে দিন।</div>
+      <div class="grid">
+        <article class="card">
+          <div class="cover"><span>উপন্যাসের নাম এখানে</span></div>
+          <div class="card-body"><h3>বইয়ের নাম ১</h3><p class="author">লেখক: লেখকের নাম</p><div class="price-row"><span class="price">৳ ২৫০</span><a class="order" href="#" data-book="বইয়ের নাম ১" onclick="return orderBook(event,this)">অর্ডার</a></div></div>
+        </article>
+        <article class="card">
+          <div class="cover gold"><span>একটি নতুন গল্প</span></div>
+          <div class="card-body"><h3>বইয়ের নাম ২</h3><p class="author">লেখক: লেখকের নাম</p><div class="price-row"><span class="price">৳ ২২০</span><a class="order" href="#" data-book="বইয়ের নাম ২" onclick="return orderBook(event,this)">অর্ডার</a></div></div>
+        </article>
+        <article class="card">
+          <div class="cover berry"><span>রহস্যের পাতা</span></div>
+          <div class="card-body"><h3>বইয়ের নাম ৩</h3><p class="author">লেখক: লেখকের নাম</p><div class="price-row"><span class="price">৳ ২৮০</span><a class="order" href="#" data-book="বইয়ের নাম ৩" onclick="return orderBook(event,this)">অর্ডার</a></div></div>
+        </article>
+        <article class="card">
+          <div class="cover blue"><span>গল্পের ঝুলি</span></div>
+          <div class="card-body"><h3>বইয়ের নাম ৪</h3><p class="author">লেখক: লেখকের নাম</p><div class="price-row"><span class="price">৳ ১৮০</span><a class="order" href="#" data-book="বইয়ের নাম ৪" onclick="return orderBook(event,this)">অর্ডার</a></div></div>
+        </article>
+        <article class="card">
+          <div class="cover gold"><span>ভালোবাসার গল্প</span></div>
+          <div class="card-body"><h3>বইয়ের নাম ৫</h3><p class="author">লেখক: লেখকের নাম</p><div class="price-row"><span class="price">৳ ৩০০</span><a class="order" href="#" data-book="বইয়ের নাম ৫" onclick="return orderBook(event,this)">অর্ডার</a></div></div>
+        </article>
+        <article class="card">
+          <div class="cover"><span>আরও বই আসছে</span></div>
+          <div class="card-body"><h3>আপনার পছন্দের বই</h3><p class="author">বইয়ের নাম ইনবক্সে জানান</p><div class="price-row"><span class="price">জানতে যোগাযোগ</span><a class="order" href="#" data-book="পছন্দের বই সম্পর্কে জানতে চাই" onclick="return orderBook(event,this)">মেসেজ</a></div></div>
+        </article>
+      </div>
+      <p class="small" style="margin-top:14px">* কভার ডিজাইনগুলো নমুনা। প্রকাশকের অনুমতি ছাড়া কপিরাইটযুক্ত কভার/ছবি ব্যবহার করবেন না।</p>
+    </div>
+  </section>
+
+  <section id="order" style="background:#f3eedf">
+    <div class="wrap">
+      <div class="section-head"><div><h2>কীভাবে অর্ডার করবেন?</h2><p class="muted">মাত্র তিনটি সহজ ধাপ</p></div></div>
+      <div class="how">
+        <div class="step"><b>১. বই বেছে নিন</b><span>কালেকশন থেকে বই ও দাম দেখুন।</span></div>
+        <div class="step"><b>২. WhatsApp-এ মেসেজ দিন</b><span>অর্ডার বাটনে চাপ দিয়ে বইয়ের নাম পাঠান।</span></div>
+        <div class="step"><b>৩. অর্ডার নিশ্চিত করুন</b><span>স্টক, ডেলিভারি চার্জ ও সম্ভাব্য সময় নিশ্চিত হওয়ার পর অর্ডার চূড়ান্ত হবে।</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer id="contact">
+  <div class="wrap foot">
+    <div><h2 style="color:#fff;margin:0">গল্পবীজ</h2><p>প্রতিটি বইয়ে নতুন এক পৃথিবী।</p></div>
+    <div><b>যোগাযোগ ও অর্ডার</b><p>WhatsApp: আপনার নম্বর যোগ করুন</p><p>Facebook: আপনার পেজের লিংক যোগ করুন</p></div>
+  </div>
+  <div class="wrap"><p class="small" style="color:#dce8df;margin-top:20px">© গল্পবীজ • বই পড়ুন, মনকে সমৃদ্ধ করুন</p></div>
+</footer>
+<script>
+/* প্রকাশের আগে নিচের 8801XXXXXXXXX জায়গায় WhatsApp নম্বর দিন।
+   বাংলাদেশের নম্বর হলে 880 দিয়ে শুরু করুন; + বা স্পেস দেবেন না। */
+const WHATSAPP_NUMBER = "8801XXXXXXXXX";
+function orderBook(event, link) {
+  event.preventDefault();
+  if (WHATSAPP_NUMBER.includes("X")) {
+    alert("ওয়েবসাইট প্রকাশের আগে HTML ফাইলে WHATSAPP_NUMBER-এর জায়গায় আপনার WhatsApp নম্বর বসান।");
+    return false;
+  }
+  const book = link.dataset.book || "একটি বই";
+  const message = `আসসালামু আলাইকুম, গল্পবীজ থেকে "${book}" বইটি অর্ডার করতে চাই। বইটি স্টকে আছে কি? মূল্য ও ডেলিভারি চার্জ জানাবেন।`;
+  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, "_blank", "noopener");
+  return false;
+}
+</script>
+</body>
+</html>
