@@ -10,7 +10,7 @@
   <!-- বইয়ের নাম -->
   <h3 style="margin: 0 0 8px; font-size: 18px; color: #333;">চিত্ত চিরে চৈত্রমাস</h3>
   
-  <!-- বইয়ের দাম -->
+  <!-- 520 -->
   <p style="margin: 0 0 12px; color: #2e7d32; font-weight: bold; font-size: 16px;">মূল্য: ৳ [দাম লিখুন]</p>
   
   <!-- হোয়াটসঅ্যাপ অর্ডার বাটন -->
